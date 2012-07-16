@@ -1,0 +1,17 @@
+public class Number40
+{
+	public static void main(String[] args)
+	{
+		int a = 1;
+		int counter = 1;
+		while (counter <= 1000000)
+		{
+			String a1 = Integer.toString(a);
+			System.out.print(a1);
+			a++;
+			counter++;
+		}
+
+	}
+
+}

@@ -1,0 +1,34 @@
+public class Number7 
+{
+	public static void main(String[] args)
+	{
+		int divisor = 2;
+		int number = 3;
+		int counter = 2;
+		while (number <= 1000000)
+		{
+			while (number % divisor != 0)
+			{	
+				if (number == divisor + 1)
+				{
+					System.out.println("The " + counter + " prime number is " + number);
+					counter++;
+					if (counter == 10001)
+					{
+						System.out.println("The answer to Project Euler #7 is " + number);
+						break;
+					}
+				}
+				divisor++;
+			}
+			divisor = 2;
+			number++;
+			if (counter == 10001)
+			{
+				break;
+			}
+		}
+
+	}
+
+}

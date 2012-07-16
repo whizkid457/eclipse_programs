@@ -1,0 +1,23 @@
+import java.math.BigInteger;
+public class Number20
+{
+	public static long factorial(long i)
+    {
+        if(i == 1)
+        {
+        	return 1;
+        }
+        else return i * (factorial(i - 1));
+    }
+    public static void main(String [] args)
+    {
+    	long i = 1;
+    	int a = 1;
+        while (i <= 30)
+        {
+        	System.out.println(a + "!= " + factorial(i));
+        	i++;
+        	a++;
+        }      
+    }
+}

@@ -1,0 +1,31 @@
+public class Number14 {
+	public static void main(String[] args) {		
+		int counter = 0;
+		int max = 0;	
+		int starting = 3;
+		while (starting < 1000000)
+		{
+			int number = starting;
+			while (number != 1)
+			{
+				if (number % 2 == 0)
+				{
+					number = (int) (.5 * number);
+					counter++;
+				}
+				if (number % 2 == 1)
+				{
+					number = (3 * number) + 1;
+					counter ++;
+				}			
+			}
+			System.out.println(starting + " has a chain of " +  counter);
+			if (counter > max)
+			{
+				max = counter;
+			}
+			counter = 0;
+			starting++;	
+		}
+	}
+}

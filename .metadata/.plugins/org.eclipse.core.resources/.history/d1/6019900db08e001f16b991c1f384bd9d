@@ -1,0 +1,41 @@
+import java.io.*;
+import javax.swing.*;
+ 
+public class Number42
+{ 
+	public static void main(String[] args) throws IOException {
+		BufferedReader fin = new BufferedReader(new FileReader("words.txt"));
+		String words;
+		words = fin.readLine();
+ 
+		int total=0;
+		String word;
+ 
+		int k;
+		//1786 words in dictionary
+		for(int i=0; i<1786; i++) {
+			word = words.split(" ")[i];
+			k = value(word);
+			if( Math.sqrt(1.0+8.0*((double)k)) == Math.floor(Math.sqrt(1.0+8.0*((double)k)))) total++;
+		}
+		JOptionPane.showMessageDialog(null, total);
+ 
+	}
+ 
+	public static int value(String word) {
+		String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		int val=0;
+		int j;
+ 
+		for(int i=0; i<word.length(); i++) {
+			for(j=0; j<26; j++) {
+				if(alphabet.charAt(j)==word.charAt(i)) {
+					break;
+				}
+			}
+			val += j+1;
+		}
+ 
+		return val;
+	}
+}

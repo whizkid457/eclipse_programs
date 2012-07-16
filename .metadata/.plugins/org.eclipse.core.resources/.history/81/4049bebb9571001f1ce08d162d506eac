@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CtoF 
+{
+
+	public static void main(String[] args) 
+	{
+	    Scanner in = new Scanner(System.in);
+		System.out.println("Temperature to convert from Celcius to Farenheit: ");
+		int temp = in.nextInt();
+	    		
+		int C = temp;
+		int F = ((9 * C)/5) + 32;
+		
+		System.out.println("If the temperature in Celcius is " + temp + " degrees, then the temperature in Farenheit is " + F + " degrees.");
+		
+	}
+
+}

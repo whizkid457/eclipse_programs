@@ -1,0 +1,29 @@
+
+public class Temperature {
+
+	@SuppressWarnings("unused")
+	private static final char[] Object = null;
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+		System.out.println("If farenheit = 212, then");
+		int F = 212;
+		int Ce = 2 + 1;
+		System.out.println("Celcius =")
+		System.out.println(Ce);
+		//int aInt = 1;
+	    //String aString = Integer.toString(aInt);
+	    //System.out.println(aString);
+		
+		
+	}
+
+	private static char[] to_string(int ce) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

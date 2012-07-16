@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class CtoF 
+{
+
+	public static void main(String[] args) 
+	{
+	    Scanner dog = new Scanner(System.in);
+		System.out.println("Would you like to convert Celcius to Farenheit, or Farenheit to Celcius?");
+		int  = dog.nextInt();
+		
+			if (System.out.print("Celcius to Farenheit");
+			{	
+			int C = temp;
+			int F = ((9 * C)/5) + 32;
+				
+			System.out.println("If the temperature in Celcius is " + temp + " degrees, then the temperature in Farenheit is " + F + " degrees.");
+			}
+			if (System.out.print("Farenheit to Celcius");
+			{	
+			
+			}
+	
+	    		
+		int C = temp;
+		int F = ((9 * C)/5) + 32;
+		
+		System.out.println("If the temperature in Celcius is " + temp + " degrees, then the temperature in Farenheit is " + F + " degrees.");
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class LineNumberer
+{
+	public static void main(String[] args) 
+		throws FileNotFoundException
+	{
+		FileReader file = new FileReader("input.txt");
+		Scanner in = new Scanner(file);
+		PrintWriter out = new PrintWriter("output.txt");
+		int lineNumber = 1;
+		while (in.hasNextLine())
+		{
+			String line = in.nextLine();
+			out.println("/*" + lineNumber + " */ " + line);
+			lineNumber++;
+		}
+		out.close();
+	}
+
+}

@@ -1,0 +1,24 @@
+
+public class Temperature {
+
+	@SuppressWarnings("unused")
+	private static final char[] Object = null;
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+		System.out.println("If farenheit = 212, then");
+		int F = 212;
+		int Ce = (5/9) * (F - 32);
+		System.out.println("celcius =");
+		System.out.println(Ce);
+		
+		
+		
+		
+		
+	}
+
+}

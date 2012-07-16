@@ -1,0 +1,29 @@
+import java.util.*;
+import java.io.*;
+public class Number42
+{
+	public static void main(String args[]) throws IOException
+	{
+		Scanner in = new Scanner(new File("Prob42.txt"));
+		ArrayList<Integer> triangle = new ArrayList<Integer>();
+		for (int i = 1; i <= 100; i++)
+		{
+			triangle.add((int)((double).5*i * (i + 1)));
+		}
+		int count = 0;
+		while (in.hasNextLine())
+		{
+			char[] letters = in.nextLine().toCharArray();
+			int sum = 0;
+			for (char a : letters)
+			{
+				sum += (int)(a-64);
+			}
+			if (triangle.contains(sum) == true)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
+}

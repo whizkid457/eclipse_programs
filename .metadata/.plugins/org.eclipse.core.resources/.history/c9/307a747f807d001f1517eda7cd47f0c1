@@ -1,0 +1,11 @@
+public class Test
+{
+	public static void main(String[] args)
+	{
+		String Integer = "lockerz";
+		String.valueOf(156);
+		System.out.println(Integer);
+
+	}
+
+}

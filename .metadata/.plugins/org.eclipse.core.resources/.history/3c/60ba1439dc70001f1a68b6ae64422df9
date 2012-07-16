@@ -1,0 +1,26 @@
+
+public class Temperature {
+
+	private static final char[] Object = null;
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+		System.out.println("If Farenheit = 32, then");
+		int variable = 212;
+		int F = variable;
+		int Ce = 5/9;
+		int Temp = (F-32);
+		int C = (Temp + Ce);
+		System.out.println("celcius =");
+		System.out.println(C);
+		
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,83 @@
+import java.util.Arrays;
+public class Number36
+{
+	public static void main(String[] args)
+	{
+		int number = 10, i = 0, sum = 0;
+		int answer []= new int[100];
+		int answers[] = new int[100];
+		String separator = "";
+		StringBuffer base2 = new StringBuffer();
+		while (number <= 1000000)
+		{
+			if (checkPal(number) != 0)
+			{
+				if (convertBase2(number, answer, i, separator, base2) == true)
+				{
+					sum+=number;
+					if (number == 999999) break;
+					Arrays.fill(answer, 0);
+				}
+			}
+			number++;
+		}
+		System.out.println("Answer: " + sum);
+	}
+	public static String arrayToString(int answers[], String separator, StringBuffer base2) 
+	{
+	    if (answers.length > 0)
+	    {
+	        base2.append(answers[0]);
+	        for (int i=1; i<answers.length; i++)
+	        {
+	            base2.append(separator);
+	            base2.append(Integer.toString(answers[i]));
+	        }
+	    }
+	    return base2.toString();
+	}
+	private static int checkPal2(int answers[], int i, StringBuffer base2)
+	{
+		String testing = base2.toString();
+		if (testing.equals(new StringBuffer(String.valueOf(testing)).reverse().toString()))
+		{
+			return 1;
+		}
+		else return 0;
+	}
+	private static boolean convertBase2(int number, int answer[], int i, String separator, StringBuffer base2)
+	{
+		i = 0;
+		while (number >= 1)
+		{
+			int remainder = number % 2;
+			System.out.print(remainder);
+			answer[i] = remainder;
+			number/=2;	
+			i++;
+		}
+		int answers[] = new int[i];
+		copyArray(answer, answers, i);
+		arrayToString(answers, separator, base2);
+		if (checkPal2(answers, i, base2) != 0) return true;
+		else return false;
+	}
+	private static int checkPal(int number) 
+	{
+		String testing = Integer.toString(number);
+		if (testing.equals(new StringBuffer(String.valueOf(testing)).reverse().toString()))
+		{
+			return 1;
+		}
+		else return 0;
+	}
+	public static int[] copyArray(int answer[], int answers[], int i)
+    {
+  	  int k = 0;
+  	  for (k = 0; k < 100 - i; k++)
+  	  {
+  		  answers[k] = answer[k];
+  	  }
+  	  return answers;
+    }	
+}

@@ -1,0 +1,41 @@
+public class Number21 
+{
+	public static void main(String[] args) 
+	{
+		int number = 2;
+		int divisor = 2;
+		int sum = 0;
+		while (number <= 10)
+		{
+			while (number >= divisor)
+			{
+				if (number == divisor)
+				{
+					number++;
+					divisor = 2;
+					System.out.println("The sum of " + number + "'s divisors is ");
+					break;					
+				}
+				if (number % divisor == 0)
+				{
+					sum = sum + divisor;
+					divisor++;
+				}
+				if (number % divisor != 0)
+				{
+					divisor++;
+				}
+			}
+			System.out.println(sum);
+		}
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

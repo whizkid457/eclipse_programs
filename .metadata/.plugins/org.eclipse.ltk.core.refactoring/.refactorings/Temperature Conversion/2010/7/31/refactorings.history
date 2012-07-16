@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 elements(s) to &apos;C++&apos;&#x0D;&#x0A;- Original project: &apos;Temperature Conversion&apos;&#x0D;&#x0A;- Destination element: &apos;C++&apos;&#x0D;&#x0A;- Original element: &apos;GCD.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=C++" element1="/src&lt;{GCD.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1280263136625" units="1" version="1.0"/>
+</session>

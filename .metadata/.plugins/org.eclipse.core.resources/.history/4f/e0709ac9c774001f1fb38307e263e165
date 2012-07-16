@@ -1,0 +1,17 @@
+public class TemperatureTable
+{
+	public static void main(String[] args)
+	{
+		float x = 0;
+		float Ce = 0;
+		while (x <= 10)
+		{
+			float Ce = ((x - 32)/ 9) * 5;
+			System.out.print(x);
+			System.out.print(" degrees Farenheit = ");
+			System.out.print( Ce);
+			System.out.println(" degrees Celcius ");
+			x = x + 1;
+		}
+	}
+}

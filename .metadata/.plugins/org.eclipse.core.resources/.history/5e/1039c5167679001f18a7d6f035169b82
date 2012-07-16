@@ -1,0 +1,39 @@
+public class Number21 
+{
+	public static void main(String[] args) 
+	{
+		int number = 3;
+		int divisor = 2;
+		int sum = 0;
+		while (number <= 10000)
+		{
+			while (number >= divisor)
+			{
+				if (number == divisor)
+				{
+					sum = sum + number;
+					System.out.println(number);
+					number++;
+				}
+				if (number % divisor == 0)
+				{
+					divisor++;
+				}
+				if (number % divisor != 0)
+				{
+					divisor++;
+				}
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

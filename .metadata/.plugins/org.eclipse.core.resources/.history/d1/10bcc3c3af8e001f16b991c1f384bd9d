@@ -1,0 +1,54 @@
+import java.io.*;
+import java.math.*;
+import java.awt.*;	
+import java.awt.event.*;	
+import javax.swing.*;	
+import java.util.*;	
+import java.io.*;	
+import java.text.*;	
+import java.util.regex.*;
+public class Number42
+{
+    public static void main(String[] args) throws java.io.FileNotFoundException, java.io.IOException
+    {
+	int total = 0;
+	String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	boolean[] index = new boolean[5000];
+	java.util.Arrays.fill(index, false);
+	for (int n=1; ; n++)
+	{
+	    int tn = n*(n+1)/2;
+	    if (tn >= 5000)
+		break;
+	    index[tn] = true;
+	}
+	java.io.FileReader f = new java.io.FileReader("p42.txt");
+	java.io.LineNumberReader fr = new java.io.LineNumberReader(f);
+	StringBuffer sb = new StringBuffer(20000);
+	String s;
+	while (true)
+	{
+	    s = fr.readLine(); // reads the entire word list
+	    if (s == null)
+		break;
+	    sb.append(s);
+	}
+	s = sb.toString();
+	int pos1 = 0;
+	while (true)
+	{
+	    pos1 = s.indexOf("\"", pos1) + 1;
+	    if (pos1 == 0)
+		break;
+	    int pos2 = s.indexOf("\"", pos1);
+	    String word = s.substring(pos1, pos2);
+	    pos1 = pos2+1;
+	    int wordsum = 0;
+	    for (int i=0; i<word.length(); i++)
+		wordsum += alpha.indexOf(word.charAt(i)) + 1;
+	    if (index[wordsum])
+		total++;
+	}
+	System.out.println(total);
+    }
+}

@@ -1,0 +1,19 @@
+
+public class Temp {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("If celcius = 100, then");
+		int variable = 100;
+		int C = variable;
+		int F = (9 * C)/5;
+		int Temp = (9 * C)/5;
+		F = Temp + 32;
+		System.out.println("farenheit =");
+		System.out.println(F);
+	}
+
+}

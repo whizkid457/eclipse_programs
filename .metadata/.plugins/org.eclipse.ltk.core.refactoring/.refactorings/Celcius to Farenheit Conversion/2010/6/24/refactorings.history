@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;CtoF.Cel&apos; in &apos;CtoF&apos;&#x0D;&#x0A;- Original project: &apos;Celcius to Farenheit Conversion&apos;&#x0D;&#x0A;- Original element: &apos;CtoF.Cel&apos;&#x0D;&#x0A;- Getter method name: &apos;isCel&apos;&#x0D;&#x0A;- Setter method name: &apos;setCel&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;Cel&apos;" flags="589830" getter="isCel" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;{CtoF.java[CtoF^Cel" insertion="0" setter="setCel" stamp="1275948901578" version="1.0" visibility="1"/>
+</session>

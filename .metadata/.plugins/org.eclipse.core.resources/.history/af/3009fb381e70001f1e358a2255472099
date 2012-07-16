@@ -1,0 +1,24 @@
+
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World! How are you today?");
+		int luckyNumber = 13;
+		System.out.println("My lucky number is");
+		System.out.println(luckyNumber);
+		System.out.println("What is your lucky number?");
+		String greeting = "Hello, World!";
+		int x = greeting.lenth();
+		
+		
+		
+		
+		
+		
+	}
+
+}

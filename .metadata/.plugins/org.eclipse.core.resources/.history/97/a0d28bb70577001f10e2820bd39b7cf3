@@ -1,0 +1,13 @@
+public class ex 
+{
+	public static void main(String[] args) 
+	{
+		int x = 5;
+		int myNumber = x;
+		int myExponent = x;
+		int myTotal = (int) Math.pow(myNumber, myExponent);
+		System.out.println(myTotal);
+
+	}
+
+}

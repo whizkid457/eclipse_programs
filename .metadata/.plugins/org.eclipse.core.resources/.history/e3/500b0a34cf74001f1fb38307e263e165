@@ -1,0 +1,26 @@
+public class Number1 
+{
+	public static void main(String[] args)
+	{
+		int x = 0;
+		int sum = 0;
+		while (x < 1000)
+		{
+			if (x % 3 == 0)
+			{
+				sum = sum + x;
+				x = x + 1;
+			}	
+			if (x % 5 == 0)
+			{
+				sum = sum + x;
+				x = x + 1;
+			
+			}
+		}
+		
+		System.out.println("The answer to Project Euler Question #1 is ");
+		System.out.println(sum);
+			
+	}
+}

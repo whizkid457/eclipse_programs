@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+public class LineNumberer
+{
+	public static void main(String[] args) 
+		throws FileNotFoundException
+	{
+		FileReader file = new FileReader("names.txt");
+		Scanner in = new Scanner(file);
+		PrintWriter out = new PrintWriter("names.txt");
+		out.println(125);
+		in.close();
+	}
+
+}

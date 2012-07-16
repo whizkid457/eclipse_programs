@@ -1,0 +1,36 @@
+import java.awt.Rectangle;
+
+
+public class HelloWorld {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Hello World! How are you today?");
+		int luckyNumber = 13;
+		System.out.println("My lucky number is");
+		System.out.println(luckyNumber);
+		System.out.println("What is your lucky number?");
+		String greeting = "Programming is a really cool thing to learn!";
+		int x = greeting.length();
+		System.out.println(x);
+		
+		System.out.println(greeting);
+		System.out.println(greeting.length());
+		String river = "Mississippi";
+		String bigRiver = "";
+		bigRiver = river.toUpperCase();
+		river.replace("issipp", "our");
+	
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

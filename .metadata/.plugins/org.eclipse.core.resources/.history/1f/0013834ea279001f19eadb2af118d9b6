@@ -1,0 +1,76 @@
+public class Number21 
+{
+	public static void main(String[] args) 
+	{
+		int number = 10;
+		int divisor = 2;
+		int sum = 1;
+		int sum1 = 1;
+		while (number < 1000)
+		{
+			while (number >= divisor)
+			{
+				if (number == divisor)
+				{				
+					while (sum < 1000)
+					{
+						divisor = 2;
+						while (sum >= divisor)
+						{
+							if (sum == divisor)
+							{				
+								if (sum == number)
+								{
+									divisor = 2;
+									System.out.println(number + "and " + sum + "are amicable pairs.");
+									number++;
+									sum = 1;
+									sum1 = 1;
+								}
+								if (sum != number)
+								{
+									divisor = 2;
+									number++;
+									sum = 1;
+									sum1 = 1;
+								}				
+							}
+							if (sum % divisor == 0)
+							{
+								sum1 = sum1 + divisor;
+								divisor++;
+							}
+							if (number % divisor != 0)
+							{
+								divisor++;
+							}
+						}
+					}
+					divisor = 2;
+					System.out.println("The sum of " + number + "'s divisors is " + sum);
+					number++;
+					sum = 1;
+					break;					
+				}
+				if (number % divisor == 0)
+				{
+					sum = sum + divisor;
+					divisor++;
+				}
+				if (number % divisor != 0)
+				{
+					divisor++;
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

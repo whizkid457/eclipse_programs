@@ -1,0 +1,49 @@
+public class Number40
+{
+	public static void main(String[] args)
+	{
+		int a = 1;
+		int counter = 1;
+		int product = 1;
+		while (counter <= 1000000)
+		{
+			String a1 = Integer.toString(a);
+			int length = a1.length();
+			System.out.print(a1);
+			if (counter == 1)
+			{
+				product = product * a;
+			}
+			if (counter == 10)
+			{
+				product = product * a;
+			}
+			if (counter == 100)
+			{
+				product = product * a;
+			}
+			if (counter == 1000)
+			{
+				product = product * a;
+			}
+			if (counter == 10000)
+			{
+				product = product * a;
+			}
+			if (counter == 100000)
+			{
+				product = product * a;
+			}
+			if (counter == 1000000)
+			{
+				product = product * a;
+			}
+			a++;
+			counter += length;
+		}
+		System.out.println("");
+		System.out.println("The answer to Project Euler #40 is " + product);
+
+	}
+
+}

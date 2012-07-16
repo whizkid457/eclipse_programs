@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+public class LineNumberer
+{
+	public static void main(String[] args) 
+		throws IOException
+	{
+		String input = "C:\\Documents and Settings\\Sameet\\My Documents\\Downloads\\names.txt";
+		String output = "C:\\Documents and Settings\\Sameet\\My Documents\\Downloads\\triangle.txt";
+		FileReader names = new FileReader(input);
+		FileReader triangle = new FileReader(output);
+		Scanner in = new Scanner(names);
+		Scanner out = new Scanner(triangle);
+		PrintWriter file = new PrintWriter(output);
+		int lineNumber = 1;
+		while (in.hasNextLine())
+		{
+			String line = in.nextLine();
+			file.println("/*" + lineNumber + " */ " + line);
+			lineNumber++;
+		}
+		lineNumber = 1;
+		while (out.hasNextLine())
+		{
+			System.out.println(output);
+			lineNumber++;
+		}
+		file.close();
+	}
+}

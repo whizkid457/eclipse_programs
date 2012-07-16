@@ -1,0 +1,41 @@
+public class Number14 
+{
+	public static void main(String[] args)
+	{
+		int starting = 2;
+		int counter = 1;
+		while (starting < 10)
+		{
+			while (starting !=1)
+			{
+				if (starting % 2 == 0)
+				{
+					starting = (1/2) * starting;
+					counter++;
+				}
+			
+				if (starting == 1)
+				{
+					System.out.println(starting + " has a chain of " +  counter);
+					counter = 1;
+					starting++;
+				}
+			
+				if (starting % 2 == 1)
+				{
+					starting = (3 * starting) + 1;
+					counter ++;
+				}
+				
+				if (starting == 1)
+				{
+					System.out.println(starting + " has a chain of " +  counter);
+					counter = 1;
+									
+				}
+				starting++;
+			}
+		}
+		
+	}			
+}

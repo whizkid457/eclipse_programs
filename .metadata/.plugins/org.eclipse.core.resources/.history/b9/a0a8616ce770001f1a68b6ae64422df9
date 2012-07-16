@@ -1,0 +1,17 @@
+
+public class Loop
+{
+	int begin;
+	int end;
+	int i;
+	
+	public ForLoop();
+	{
+		
+			i = begin;
+			while (i <= end);
+			{
+				...
+				i++;
+			}
+	}

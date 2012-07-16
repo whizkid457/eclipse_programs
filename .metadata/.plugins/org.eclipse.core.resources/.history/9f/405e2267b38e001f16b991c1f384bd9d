@@ -1,0 +1,70 @@
+public class Number4
+{
+	public static void main(String[] args)
+	{
+		int a = 100;
+		int b = 100;
+		int max = 0;
+		while (a <= 1000 && b <= 1000)
+		{
+			if (b == 1000)
+			{
+				b = 100;
+				a++;
+			}
+			int x = (a * b);
+			String number = Integer.toString(x);
+			int y = number.length();
+			if (y == 5)
+			{
+				String first = number.substring(0, 1);
+				String second = number.substring(1, 2);
+				String fourth = number.substring(3, 4);
+				String fifth = number.substring(4, 5);
+				int one = Integer.parseInt(first);
+				int two  = Integer.parseInt(second);
+				int four = Integer.parseInt(fourth);
+				int five = Integer.parseInt(fifth);
+				if (one == five && two == four)
+				{
+					int number1 = Integer.parseInt(number);
+					if (number1 > max)
+					{
+						max = number1;
+						System.out.println(number1);
+					}
+					b++;
+				}
+				b++;
+				
+			}
+			if (y == 6)
+			{
+				String first = number.substring(0, 1);
+				String second = number.substring(1, 2);
+				String third = number.substring(2, 3);
+				String fourth = number.substring(3, 4);
+				String fifth = number.substring(4, 5);
+				String sixth = number.substring(5, 6);
+				int one = Integer.parseInt(first);
+				int two  = Integer.parseInt(second);
+				int three = Integer.parseInt(third);
+				int four = Integer.parseInt(fourth);
+				int five = Integer.parseInt(fifth);
+				int six = Integer.parseInt(sixth);
+				if (one == six  && two == five && three == four)
+				{
+					int number1 = Integer.parseInt(number);
+					if (number1 > max)
+					{
+						max = number1;
+						System.out.println(number1);
+						b++;
+					}
+					b++;
+				}
+				b++;
+			}
+		}
+	}	
+}

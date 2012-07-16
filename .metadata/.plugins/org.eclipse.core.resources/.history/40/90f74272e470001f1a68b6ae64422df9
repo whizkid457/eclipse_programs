@@ -1,0 +1,21 @@
+
+public class Loop {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int targetBalance;
+		int balance = 0;
+		// TODO Auto-generated method stub
+		while (balance < targetBalance);
+		{
+			int years;
+			years++;
+			int rate;
+			double interest = balance * rate / 100;
+			balance = (int) (balance + interest);
+		}
+	}
+
+}

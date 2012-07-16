@@ -1,0 +1,21 @@
+
+public class CtoF {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.print("If the temperature in celcius is 100 degrees, then");
+		int variable = 100;
+		int C = variable;
+		int F = (9 * C)/5;
+		int Temp = (9 * C)/5;
+		F = Temp + 32;
+		System.out.println(" the temperature in farenheit must be ");
+		System.out.print(F);
+		System.out.print(" degrees.");
+
+	}
+
+}

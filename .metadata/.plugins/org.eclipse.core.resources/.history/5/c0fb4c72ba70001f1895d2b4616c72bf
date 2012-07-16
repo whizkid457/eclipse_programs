@@ -1,0 +1,14 @@
+
+public class Farenheit {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+	private JTextField _inField
+		// TODO Auto-generated method stub
+		String data = _inField.getText(); //Get the text
+		System.out.println("Please write the Farenheit temperature in which you would like to convert it to Celcius."); 
+	}
+
+}

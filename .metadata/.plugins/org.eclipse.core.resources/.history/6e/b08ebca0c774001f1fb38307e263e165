@@ -1,0 +1,27 @@
+public class CelciustoFarenheitTable
+{
+	public static void main(String[] args)
+	{
+		
+		float x = 0;
+		float F = 0;
+		
+		while (x <= 100)
+		{
+			
+			
+			
+			F = ((9 * x)/5) + 32;
+			
+			System.out.print(x);
+			
+			System.out.print(" degrees Celcius = ");
+			
+			System.out.print(F);
+			
+			System.out.println(" degrees Farenheit ");
+			
+			x = x + 1;
+		}
+	}
+}

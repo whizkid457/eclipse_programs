@@ -1,0 +1,28 @@
+public class Number63
+{
+	public static void main(String[] args)
+	{
+		int number = 1, counter = 0;
+		for (number = 1; Integer.toString(number).length() < 10; number++)
+		{
+			int i = 0;
+			while (true)
+			{
+				if (Math.pow(i, Integer.toString(number).length()) == number)
+				{
+					counter++;
+					System.out.println(number + " = " + i + "^" + Integer.toString(number).length());
+					break;
+				}
+				else i++;
+				if (Math.pow(i, Integer.toString(number).length()) > number)
+				{
+					break;
+				}
+			}
+			number++;
+		}
+		System.out.println("Answer: " + counter);
+	}
+
+}

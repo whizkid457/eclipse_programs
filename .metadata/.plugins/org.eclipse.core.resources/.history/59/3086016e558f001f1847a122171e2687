@@ -1,0 +1,43 @@
+public class Number14a
+{
+	public static void main(String[] args)
+	{		
+		int counter = 0;
+		int number = 0;
+		int max = 0;	
+		int starting = 3;
+		while (starting < 100)
+		{
+			number = starting;
+			System.out.print(number + ": ");
+			while (number > 0)
+			{
+				if (number % 2 == 0)
+				{
+					number = (int) (1/2 * number);
+					counter++;
+					System.out.print(number + " ");
+				}
+				if (number % 2 != 0)
+				{
+					number = (3 * number) + 1;
+					counter++;
+					System.out.print(number + " ");
+				}			
+				if (number == 1)
+				{
+					System.out.print(number + " ");
+					break;
+				}
+			}
+			System.out.println("         ");
+			if (counter > max)
+			{
+				max = counter;
+			}
+			counter = 0;
+			starting++;	
+		}
+		System.out.println("The answer to Project Euler #14 is " + max);
+	}
+}

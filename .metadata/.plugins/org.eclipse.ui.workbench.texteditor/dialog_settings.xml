@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="376" key="DIALOG_Y_ORIGIN"/>
+		<item value="472" key="DIALOG_X_ORIGIN"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wholeword"/>
+		<item value="keyLength" key="selection"/>
+		<list key="findhistory">
+			<item value="matchLength"/>
+			<item value="matched"/>
+			<item value="p"/>
+			<item value="echo"/>
+			<item value="removedLines"/>
+			<item value="remove"/>
+			<item value="MainFrame"/>
+			<item value="// TODO Auto-generated method stub"/>
+		</list>
+		<list key="replacehistory">
+			<item value="keyLength"/>
+			<item value="key"/>
+			<item value="m"/>
+			<item value="reverse"/>
+			<item value="hi"/>
+			<item value=""/>
+			<item value="results"/>
+			<item value="public"/>
+		</list>
+	</section>
+</section>
